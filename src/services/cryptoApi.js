@@ -29,7 +29,7 @@ const getCoinDetial = (coinID) => {
 }
 
 const lineChart = (coinId, daysIndex) => {
-   console.log('daysIndex', daysIndex);
+    console.log('daysIndex', daysIndex);
     return fetch(`${BASE_URL}/coins/${coinId}/market_chart?vs_currency=usd&precision=2&days=${daysIndex}&${import.meta.env.VITE_TOKEN}`, { method: 'GET', headers: { header } })
 }
 
