@@ -2,7 +2,8 @@ const BASE_URL = 'https://api.coingecko.com/api/v3';
 
 const header = {
     accept: 'application/json',
-    'x-cg-demo-api-key': 'CG-JfRYq4bK3nsysFdaCkWcMoGU'
+    'x-cg-demo-api-key': 'CG-JfRYq4bK3nsysFdaCkWcMoGU',
+    'Access-Control-Allow-Origin': '*',
 }
 
 const getCoins = (page, currency) => {
